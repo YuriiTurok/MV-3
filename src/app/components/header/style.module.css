@@ -1,0 +1,154 @@
+.header{
+  background: #0E1030;
+  padding: 24px 0;
+}
+
+.headerInner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo{
+  position: relative;
+  z-index: 10;
+}
+
+.headerLogoLink{
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.headerMenuList{
+  display: flex;
+  gap: 48px;
+}
+
+.headerMenuList.active{
+  transform: translateX(0%);
+  z-index: 9;
+}
+
+.headerMenuLink{
+  color: #8492A5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  transition: color .3s ease;
+}
+
+.headerMenuLink:hover{
+  color: #FFF;
+}
+
+.headerBtn{
+  background: #231E41;
+  color: #FFF;
+  font-weight: 600;
+  padding: 10px 16px;
+  width: 200px;
+  border: 1px solid #7553F0;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.headerBtn:hover{
+  background: #7553F0;
+}
+
+.headerBtn.mobile{
+  display: none;
+}
+
+/* ------------------------- */
+
+.headerBurgerBtn{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+
+.burgerBtnLine{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.burgerBtnLine:nth-child(1){
+  transform: translateY(-10px);
+  transition: transform .3s ease;
+}
+
+.burgerBtnLine:nth-child(3){
+  transform: translateY(10px);
+  transition: transform .3s ease;
+}
+
+.headerBurgerBtn.active .burgerBtnLine:nth-child(1){
+  transform: rotate(-45deg); /*45*/
+  transition: transform .3s ease;
+}
+
+.headerBurgerBtn.active .burgerBtnLine:nth-child(2){
+  display: none;
+}
+
+.headerBurgerBtn.active .burgerBtnLine:nth-child(3){
+  transform: rotate(223deg); /*-45*/
+  transition: transform .3s ease;
+}
+
+
+/* -------------------------- */
+
+@media (max-width: 885px) {
+  .header{
+    padding: 21px 0 19px;
+    background: #0F1115;
+  }
+
+  .headerBtn{
+    display: none;
+  }
+
+  .headerBurgerBtn{
+    display: flex;
+  }
+
+  .headerBtn.mobile{
+    display: block;
+  }
+
+  .headerMenuList{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0F1115;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding-top: 214.5px;
+    transform: translateX(100%);
+    transition: transform .5s ease;
+  }
+
+  .headerMenuLink{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+}
+

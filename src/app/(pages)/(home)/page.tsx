@@ -1,9 +1,10 @@
 import styles from './style.module.css'
+import Team from "@/app/(pages)/(home)/team";
 
 export default function Home() {
   return (
     <>
-      <h1 className={styles.title}></h1>
+      <Team />
     </>
   )
 }

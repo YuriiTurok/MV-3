@@ -36,3 +36,11 @@ a{
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.title{
+  color: #FFF;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 71.5px;
+  text-align: center;
+}

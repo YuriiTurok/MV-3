@@ -1,0 +1,76 @@
+.team{
+  background: #0F1115;
+  padding: 128px 0;
+}
+
+.teamTitle{
+  margin-bottom: 64px;
+}
+
+.teamInner{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(271px, 1fr));
+  gap: 56px 32px;
+  margin-bottom: 56px;
+}
+
+.teamItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamItemImg{
+  position: relative;
+}
+
+.linkedIn{
+  background: #FFF;
+  padding: 6px;
+  border: 6px solid #0F1115;
+  border-radius: 100px;
+  width: 41px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 92px;
+  left: 93.5px;
+  transition: all .3s ease ;
+}
+
+.linkedIn:hover{
+  background: #7553F0;
+}
+
+.linkedIn:hover path{
+  fill: white;
+}
+
+.teamDivider{
+  width: 22px;
+  height: 2px;
+  background: #8492A5;
+  margin-top: 18px;
+}
+
+.teamItemName{
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 27px;
+  margin-top: 10px;
+  transition: color .3s ease;
+}
+
+
+.teamItemPosition{
+  color: #D3DCE6;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.teamMore{
+  text-align: center;
+}

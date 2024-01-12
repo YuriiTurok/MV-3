@@ -1,18 +1,29 @@
+'use client'
+
 import styles from "./style.module.css"
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/components/button/Button";
 
 import {teamItems} from "./teamItems"
+import {useMemo, useState} from "react";
 
 
 export default function Team() {
+  const itemsPerPageDesktop = 8;
+
+  const [itemsToShow, setItemsToShow] = useState(itemsPerPageDesktop);
+  const visibleItems = teamItems.slice(0, itemsToShow)
+  const loadMore = () => {
+    setItemsToShow(itemsToShow + itemsPerPageDesktop)
+  }
+
   return(
     <section className={styles.team}>
       <div className="container">
         <h2 className={styles.teamTitle + " title"}>Our team</h2>
         <div className={styles.teamInner}>
-          {teamItems.map((teamItem) => (
+          {visibleItems.map((teamItem) => (
             <div className={styles.teamItem} key={teamItem.fullName}>
               <div className={styles.teamItemImg}>
                 <Image src={`/${teamItem.image}.png`} className={styles.itemImg} width={126} height={126} alt={`${teamItem.fullName} image`}/>
@@ -34,7 +45,7 @@ export default function Team() {
           ))}
         </div>
         <div className={styles.teamMore}>
-          <Button title="See more"/>
+            <Button title="See more" action={loadMore}/>
         </div>
       </div>
     </section>

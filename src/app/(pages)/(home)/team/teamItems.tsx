@@ -64,4 +64,68 @@ export const teamItems = [
       link: 'https://www.instagram.com/baryga_xa/'
     }
   },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
+  {
+    image: 'Kapelyushny',
+    fullName: 'Ruslan Kapelyushny',
+    position: 'HTML / CSS Developer',
+    socialMedia: {
+      link: 'https://www.instagram.com/baryga_xa/'
+    }
+  },
 ]

@@ -18,19 +18,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .teamItemImg{
   position: relative;
+  height: 126px;
 }
 
 .linkedIn{
   background: #FFF;
   padding: 6px;
-  border: 6px solid #0F1115;
+  border: 5px solid #0F1115;
   border-radius: 100px;
-  width: 41px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -15,7 +15,7 @@ export default function Team() {
           {teamItems.map((teamItem) => (
             <div className={styles.teamItem} key={teamItem.fullName}>
               <div className={styles.teamItemImg}>
-                <Image src={`/${teamItem.image}.png`} className={styles.itemImg} width={127} height={126} alt={`${teamItem.fullName} image`}/>
+                <Image src={`/${teamItem.image}.png`} className={styles.itemImg} width={126} height={126} alt={`${teamItem.fullName} image`}/>
                 <Link className={styles.linkedIn} href={teamItem.socialMedia.link} >
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                     <path d="M2.71429 12.9998H0V3.6665H2.71429V12.9998ZM12.6667 12.9998H9.95238V8.01397C9.95238 6.71477 9.50362 6.06797 8.61424 6.06797C7.90943 6.06797 7.46248 6.4301 7.2381 7.1553C7.2381 8.33317 7.2381 12.9998 7.2381 12.9998H4.52381C4.52381 12.9998 4.56 4.59984 4.52381 3.6665H6.66629L6.83186 5.53317H6.88795C7.44438 4.59984 8.33376 3.96704 9.55338 3.96704C10.4808 3.96704 11.2308 4.23304 11.8035 4.9013C12.3799 5.5705 12.6667 6.46837 12.6667 7.7293V12.9998Z" fill="#0F1115"/>
